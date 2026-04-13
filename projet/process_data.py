@@ -2,8 +2,8 @@ import polars as pl
 import os
 
 def convert_to_parquet():
-    csv_path = "data/accepted_2007_to_2018q4.csv/accepted_2007_to_2018Q4.csv"
-    parquet_path = "data/lending_club.parquet"
+    csv_path = "projet/data/accepted_2007_to_2018q4.csv/accepted_2007_to_2018Q4.csv"
+    parquet_path = "projet/data/lending_club.parquet"
 
     if os.path.exists(csv_path):
         print("Conversion CSV -> Parquet en cours (utilisation de Polars)...")

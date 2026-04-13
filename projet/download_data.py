@@ -7,7 +7,7 @@ def setup_data():
     path = kagglehub.dataset_download("wordsforthewise/lending-club")
     
     # On déplace le fichier dans notre dossier local 'data' pour plus de clarté
-    local_data_dir = "data"
+    local_data_dir = "projet/data"
     os.makedirs(local_data_dir, exist_ok=True)
     
     for file in os.listdir(path):
